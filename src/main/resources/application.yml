@@ -1,0 +1,37 @@
+server:
+  port: 8080
+  max-http-header-size: 100KB
+  compression:
+    enabled: true
+    mime-types: text/html, text/xml, text/plain, text/css, text/javascript, application/javascript, application/json
+
+
+spring:
+  application:
+    name: poc-client
+    description: poc-feign-vs-rest-client
+  profiles:
+    active: local
+
+  cloud:
+    openfeign:
+      client:
+        config:
+          joke-client:
+            url: https://icanhazdadjoke.com
+            connectTimeout: 5000
+            readTimeout: 5000
+
+springdoc:
+  api-docs:
+    path: /api-docs
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+    doc-expansion: none
+    display-request-duration: true
+
+
