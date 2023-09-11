@@ -11,8 +11,8 @@ class SwaggerConfig {
     fun defaultOpenApiConfig(): OpenAPI {
         return OpenAPI()
             .info(
-                Info().title("Your API Title")
-                    .description("Your API Description")
+                Info().title("Client POC Project")
+                    .description("Feign Client vs Rest Template")
                     .version("1.0"),
             )
     }
