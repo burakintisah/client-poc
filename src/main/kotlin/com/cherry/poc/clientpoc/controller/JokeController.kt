@@ -24,4 +24,10 @@ class JokeController(
     fun getRandomJokesFromRestTemplate(): String {
         return jokeService.getRandomJokeFromRestTemplate()
     }
+
+    @GetMapping("/webclient")
+    @ResponseStatus(HttpStatus.OK)
+    fun getRandomJokesFromWebClient(): String {
+        return jokeService.getRandomJokeFromWebclient()
+    }
 }
