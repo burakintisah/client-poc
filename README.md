@@ -22,6 +22,7 @@
 - [x] Implementing WebClient Client
 - [x] Implementing Controller / Service Layers
 - [ ] Implementing Interceptor for Feign Client
+- [ ] Implementing Interceptor for Web Client
 - [ ] Implementing Interceptor for Rest Template
 
 ## Built With
